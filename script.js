@@ -20,11 +20,19 @@ function myHeaderState(){
   }
 }
 
-function openContent(contentId){
+/* Function for tab in the site page */
+
+function openContent(event, contentId){
   var i
   const content = document.getElementsByClassName("div-miss");
+  const button = document.getElementsByClassName("buttonTabs");
+  document.getElementById("def-tab").style.display = "none";
   for (i = 0; i < content.length; i++){
     content[i].style.display = "none";
   }
-  document.getElementById(contentId).style.display = "block"
+  for (i = 0; i < button.length; i++){
+    button[i].className = button[i].className.replace(" active", "")
+  }
+  document.getElementById(contentId).style.display = "block";
+  event.currentTarget.className += " active";
 }

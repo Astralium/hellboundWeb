@@ -215,4 +215,10 @@ body{ font-family: Arial, Helvetica, sans-serif; margin: 0; }
     font-weight: bold;
 }
 
+.grid-item-2-2 button.active{
+    color: #999999;
+    padding-right: 8px;
+    font-weight: bold;
+}
+
 .div-miss{ display: none; }
