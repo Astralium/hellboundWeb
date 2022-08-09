@@ -8,6 +8,8 @@ body{
 }
 
 .header-div{
+    position: static;
+    width: 100%;
     overflow: hidden;
     background-color: #333333;
 }
@@ -126,20 +128,6 @@ body{
     color: white;
 }
 
-.div-main-2{
-    background-color: white;
-    padding: 30px;
-    padding-bottom: 10px;
-    font-family: Public-Sans-Regular;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-}
-.div-main-2 h1{
-    text-decoration: underline;
-    margin: 0;
-    color: #333333;
-}
 .grid-container{
     margin-left: 50px;
     margin-right: 50px;
