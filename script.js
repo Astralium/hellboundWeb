@@ -1,18 +1,4 @@
-var myArray = {
-    "User": "admin",
-    "Password": "admin"
-};
-
-function myAlert(){
-  var output = "User: " + myArray.User + "\n" + "Password: " + myArray.Password;
-  alert(output);
-}
-function myColor(){
-  document.getElementById("div3").style.backgroundColor = "#141619";
-}
-function myColor2(){
-  document.getElementById("div3").style.backgroundColor = "#2E3339";
-}
+/* Function for moveable header of the site */
 
 window.onscroll = function() {myHeaderState()};
 function myHeaderState(){
@@ -32,4 +18,13 @@ function myHeaderState(){
     header.style.position = "static";
     block.style.paddingBottom = "10px";
   }
+}
+
+function openContent(contentId){
+  var i
+  const content = document.getElementsByClassName("div-miss");
+  for (i = 0; i < content.length; i++){
+    content[i].style.display = "none";
+  }
+  document.getElementById(contentId).style.display = "block"
 }

@@ -1,26 +1,15 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-@font-face {
-    font-family: Public-Sans-Regular;
-    src: url("./media/otf/PublicSans-Regular.otf");
-}
+/* Styling for the whole pages */
+body{ font-family: Arial, Helvetica, sans-serif; margin: 0; }
+@font-face {font-family: Public-Sans-Regular; src: url("./media/otf/PublicSans-Regular.otf"); }
 
+/* Styling for the header of the site */
+
+/* Styling for the dynamic part of the header */
 .header-div{
     position: static;
     width: 100%;
     overflow: hidden;
     background-color: #333333;
-}
-.header-div2{
-    font-family: monospace;
-    overflow: hidden;
-    padding: 10px;
-    color: #999999;
-    background-color: #242424;
-    font-size: 10;
-    text-align: center;
 }
 .sub-header-left{
     float: left;
@@ -30,6 +19,7 @@ body{
     display: flex;
     align-items: center;
 }
+
 .sub-header-right{
     float: right;
     height: 80px;
@@ -38,6 +28,7 @@ body{
     display: flex;
     align-items: center;
 }
+
 .a{
     color: white;
     font-size: 18px;
@@ -45,14 +36,22 @@ body{
     font-weight: bold;
     margin:10px;
 }
-.a:hover{
+
+.a:hover{ color: #999999; }
+.h-text{ color: #55aef6; margin: 10px; }
+
+/* Styling for the static part of the header */
+.header-div2{
+    font-family: monospace;
+    overflow: hidden;
+    padding: 10px;
     color: #999999;
-}
-.h-text{
-    color: #55aef6;
-    margin: 10px;
+    background-color: #242424;
+    font-size: 10;
+    text-align: center;
 }
 
+/* Styling for the image home page of the site */
 .div-main{
     background-image: url("./media/img/264539.png");
     background-position: left;
@@ -61,6 +60,7 @@ body{
     vertical-align: middle;
     padding: 30px;
 }
+
 .div-main-h1{
     margin-top: 60px;
     margin-bottom: 0;
@@ -71,6 +71,7 @@ body{
     vertical-align: middle;
     color: #55aef6;
 }
+
 .div-main-h2{
     margin-top: 0;
     padding-top: 0;
@@ -79,6 +80,7 @@ body{
     font-size: 25px;
     color: white;
 }
+
 .button{
     margin-top: 20px;
     text-decoration: none;
@@ -93,7 +95,9 @@ body{
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 10px;
+    cursor: pointer;
 }
+
 .button2{
     margin-top: 20px;
     text-decoration: none;
@@ -105,7 +109,9 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     padding: 20px;
+    cursor: pointer;
 }
+
 .button a{
     text-decoration: none;
     color: #242424;
@@ -114,20 +120,13 @@ body{
     padding-bottom: 15px;
     border-radius: 10px;
 }
-.button2 a{
-    text-decoration: none;
-    color: #55aef6;
-}
-.button:hover{
-    background-color: #99d1ff;
-}
-.button2:hover{
-    color: white;
-}
-.button2 a:hover{
-    color: white;
-}
 
+.button2 a{text-decoration: none; color: #55aef6; }
+.button:hover{ background-color: #99d1ff; }
+.button2:hover{ color: white; }
+.button2 a:hover{ color: white; }
+
+/* Styling for the special-desc(container) of the site */
 .grid-container{
     margin-left: 50px;
     margin-right: 50px;
@@ -137,6 +136,7 @@ body{
     display: grid;
     grid-template-columns: auto auto auto;
 }
+
 .grid-item{
     margin: 0;
     padding: 20px;
@@ -144,25 +144,75 @@ body{
     text-align: left;
     color: #333333;
     font-family: Public-Sans-Regular;
-    border-radius: 10px;
-}
-.grid-item h3{
-    margin: 0;
-}
-.grid-item p{
-    font-size: 20px;
 }
 
-.div-main-3{
-    background-color: #2E3339;
+.grid-item h3{ margin: 0; }
+.grid-item p{ font-size: 20px; }
+
+/* Styling for the 3rd js menu of the site */
+.grid-container-2{
+    margin: 0;
+    background-color: white;
+    grid-gap: 20px;
     padding: 30px;
-    padding-bottom: 10px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    display: grid;
+    vertical-align: top;
+    background-color: #3f3f3f;
+    grid-template-columns: 25% 75%;
+}
+
+.grid-item-2{
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    text-align: left;
+    color: white;
     font-family: Public-Sans-Regular;
+    border-radius: 10px;
+}
+
+.grid-item-2-2{
+    margin: 0;
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    vertical-align: top;
+    text-align: left;
+    background-color: #242424;
+    color: white;
+    font-family: Public-Sans-Regular;
+}
+
+.grid-item-2-2 button{
+    float: right;
+    overflow: hidden;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    margin-right: 80px;
+    text-decoration: none;
+    background-color: transparent;
+    border-bottom: 0;
+    border-left: 0;
+    border-top: 0;
+    padding-right: 20px;
+    border-right-width: 4px;
+    border-right-style: solid;
+    border-right-color: #55aef6;
+    font-family: Public-Sans-Regular;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.grid-item-2-2 button:hover{
+    color: #999999;
+    padding-right: 8px;
     font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    height: 200px;
 }
-.div-main-3 button{
-    margin: 50px;
-}
+
+.div-miss{ display: none; }
