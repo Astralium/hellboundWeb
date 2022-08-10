@@ -26,7 +26,10 @@ function openContent(event, contentId){
   var i
   const content = document.getElementsByClassName("div-miss");
   const button = document.getElementsByClassName("buttonTabs");
-  document.getElementById("def-tab").style.display = "none";
+  const defTab = document.getElementById("def-tab");
+
+  defTab.style.display = "none";
+
   for (i = 0; i < content.length; i++){
     content[i].style.display = "none";
   }
@@ -35,4 +38,35 @@ function openContent(event, contentId){
   }
   document.getElementById(contentId).style.display = "block";
   event.currentTarget.className += " active";
+}
+
+/* Button arrow */
+
+const image_list = [
+  "./media/img/P5R_Portrait_Sumire_NoGlasses_Sad.png",
+  "./media/img/shubham.jpg",
+  "./media/img/264539.png",
+  "./media/img/Surprised_Kasumi.png",
+  "./media/img/embrksm.png",
+  "./media/img/IMG-20220808-WA0027.jpg"
+];
+var i = 0;
+
+function arrowClick(){
+  i--;
+  if (i < 0){
+    i++;
+  }
+  document.getElementById("imageShown").src = image_list[i];
+  console.log(i);
+}
+
+function arrowClick2(){
+  i++;
+  const j = image_list.length;
+  if (i === j){
+    i--;
+  }
+  document.getElementById("imageShown").src = image_list[i];
+
 }
