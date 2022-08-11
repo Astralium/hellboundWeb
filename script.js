@@ -54,19 +54,22 @@ var i = 0;
 
 function arrowClick(){
   i--;
-  if (i < 0){
-    i++;
+  switch(i){
+    case -1:
+      i++;
+      document.getElementById("imageShown").src = image_list[i];
+    default:
+      document.getElementById("imageShown").src = image_list[i];
   }
-  document.getElementById("imageShown").src = image_list[i];
-  console.log(i);
 }
 
 function arrowClick2(){
   i++;
-  const j = image_list.length;
-  if (i === j){
-    i--;
+  switch(i){
+    case image_list.length:
+      i--
+      document.getElementById("imageShown").src = image_list[i];
+    default:
+      document.getElementById("imageShown").src = image_list[i];
   }
-  document.getElementById("imageShown").src = image_list[i];
-
 }
