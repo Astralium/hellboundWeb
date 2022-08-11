@@ -53,23 +53,29 @@ const image_list = [
 var i = 0;
 
 function arrowClick(){
+  console.time("concatenation");
   i--;
   switch(i){
     case -1:
       i++;
       document.getElementById("imageShown").src = image_list[i];
+      console.timeEnd("concatenation");
     default:
       document.getElementById("imageShown").src = image_list[i];
+      console.timeEnd("concatenation");
   }
 }
 
 function arrowClick2(){
+  console.time("concatenation");
   i++;
   switch(i){
     case image_list.length:
       i--
       document.getElementById("imageShown").src = image_list[i];
+      console.timeEnd("concatenation");
     default:
       document.getElementById("imageShown").src = image_list[i];
+      console.timeEnd("concatenation");
   }
 }
