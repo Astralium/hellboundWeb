@@ -253,6 +253,10 @@ body{ font-family: "Public-Sans-Regular"; margin: 0; }
     color: #333333;
 }
 
+.img-container{
+    display: none;
+}
+
 .arrow-button{
     margin-left: 20px;
     margin-right: 20px;
@@ -319,4 +323,43 @@ body{ font-family: "Public-Sans-Regular"; margin: 0; }
 
 .arrow-button2:hover .bar4{
     background-color: #999999;
+}
+
+/* Footer styling */
+
+.footer1{
+    background-color: #3f3f3f;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.footer1-item{
+    font-size: 15px;
+    color: white;
+}
+
+.footer1-item h1{
+    margin-left: 20px;
+    color: #999999;
+}
+
+.footer1-item h2{
+    margin-left: 40px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.footer1-item h2:hover{
+    color: #55aef6;
+    cursor: pointer;
+}
+
+.footer2{
+    padding: 2px;
+    font-size: 15px;
+    background-color: #333333;
+    text-align: center;
+    color: #999999;
+    font-family: monospace;
 }

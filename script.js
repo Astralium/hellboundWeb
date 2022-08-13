@@ -7,8 +7,6 @@ function myHeaderState(){
   const offSet = header.offsetTop;
 
   if (window.pageYOffset > offSet){
-    console.log(window.pageYOffset);
-    console.log(offSet);
 
     header.style.position = "fixed";
     header.style.top = 0;
@@ -42,40 +40,22 @@ function openContent(event, contentId){
 
 /* Button arrow */
 
-const image_list = [
-  "./media/img/P5R_Portrait_Sumire_NoGlasses_Sad.png",
-  "./media/img/shubham.jpg",
-  "./media/img/264539.png",
-  "./media/img/Surprised_Kasumi.png",
-  "./media/img/embrksm.png",
-  "./media/img/IMG-20220808-WA0027.jpg"
-];
-var i = 0;
+let slideIndex = 1;
+showSlides(slideIndex);
 
-function arrowClick(){
-  console.time("concatenation");
-  i--;
-  switch(i){
-    case -1:
-      i++;
-      document.getElementById("imageShown").src = image_list[i];
-      console.timeEnd("concatenation");
-    default:
-      document.getElementById("imageShown").src = image_list[i];
-      console.timeEnd("concatenation");
-  }
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function arrowClick2(){
-  console.time("concatenation");
-  i++;
-  switch(i){
-    case image_list.length:
-      i--
-      document.getElementById("imageShown").src = image_list[i];
-      console.timeEnd("concatenation");
-    default:
-      document.getElementById("imageShown").src = image_list[i];
-      console.timeEnd("concatenation");
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("img-container");
+  document.getElementById("imgShow").style.display = "none";
+
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
   }
+  slides[slideIndex-1].style.display = "block"; 
 }

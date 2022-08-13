@@ -79,6 +79,10 @@
                             <h2 style="margin-left: 10%;">
                                 More About Us
                             </h2>
+                            <button class="buttonTabs" onclick='openContent(event, "About")'>
+                                About
+                            </button>
+                            <br>
                             <button id="tab-def" class="buttonTabs" onclick='openContent(event, "Comm")'>
                                 Community
                             </button>
@@ -96,7 +100,27 @@
                             </button>
                         </div>
                         <div class="grid-item-2">
-                            <div id="def-tab" style="display: block; opacity: 1;">
+                            <div id="def-tab" style="display: block;">
+                                <h2>About Us</h2>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                    Blanditiis vero rerum iusto consequatur velit molestias aliquid, deleniti laborum et quae. 
+                                    Sunt labore, ex quos velit necessitatibus voluptatem amet aperiam quisquam?
+                                </p>
+                                <br>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                    Porro provident iusto, ipsa alias eligendi architecto tempore amet molestias labore totam 
+                                    perferendis id ducimus, velit minima quis, quisquam blanditiis aliquid error.
+                                </p>
+                                <br>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Quod inventore aspernatur assumenda facere eligendi. Libero saepe praesentium dignissimos dolorum, 
+                                    officia sequi eveniet ea blanditiis odit, consectetur cupiditate amet quisquam facilis?
+                                </p>
+                            </div>
+                            <div id="About" class="div-miss">
                                 <h2>About Us</h2>
                                 <p>
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
@@ -123,6 +147,10 @@
                                     Blanditiis vero rerum iusto consequatur velit molestias aliquid, deleniti laborum et quae. 
                                     Sunt labore, ex quos velit necessitatibus voluptatem amet aperiam quisquam?
                                 </p>
+                                <br>
+                                <video height="400px" controls>
+                                    <source src="./media/video/y2mate.com - Blade Runner 2049 2017  Mesa scene 1080p_1080p.mp4" type="video/mp4">
+                                </video>
                                 <br>
                                 <p>
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -155,6 +183,9 @@
                                     Quod inventore aspernatur assumenda facere eligendi. Libero saepe praesentium dignissimos dolorum, 
                                     officia sequi eveniet ea blanditiis odit, consectetur cupiditate amet quisquam facilis?
                                 </p>
+                                <audio controls>
+                                    <source src="./media/audio/11_Two-Headed_Boy_Pt_2.flac" type="audio/flac">
+                                </audio>
                             </div>
                             <div id="Tech" class="div-miss">
                                 <h2>Technology At Its Core</h2>
@@ -220,15 +251,41 @@
                             </p>
                         </div>
                         <div class="info-item-image">
-                            <img id="imageShown" src="./media/img/P5R_Portrait_Sumire_NoGlasses_Sad.png" height="550px" style="border-radius: 20px;">
+                            <div id="imgShow" style="display: block;">
+                                <img id="imgShow" src="./media/img/shubham.jpg" height="550px" style="border-radius: 20px;">
+                            </div>
+                            <div class="img-container">
+                                <img src="./media/img/shubham.jpg" height="550px" style="border-radius: 20px;">
+                            </div>
+                            <div class="img-container">
+                                <img src="./media/img/P5R_Portrait_Kasumi_Sad.png" height="550px" style="border-radius: 20px;">
+                            </div>
+                            <div class="img-container">
+                                <img src="./media/img/IMG-20220808-WA0027.jpg" height="550px" style="border-radius: 20px;">
+                            </div>
+                            <div class="img-container">
+                                <img src="./media/img/P5R_Portrait_Sumire_NoGlasses_Sad.png" height="550px" style="border-radius: 20px;">
+                            </div>
+                            <div class="img-container">
+                                <img src="./media/img/thumb-1920-1181492.jpg" height="550px" style="border-radius: 20px;">
+                            </div>
+                            <div class="img-container">
+                                <img src="./media/img/embrksm.png" height="550px" style="border-radius: 20px;">
+                            </div>
+                            <div class="img-container">
+                                <img src="./media/img/264539.png" height="550px" style="border-radius: 20px;">
+                            </div>
+                            <div class="img-container">
+                                <img src="./media/img/Surprised_Kasumi.png" height="550px" style="border-radius: 20px;">
+                            </div>
                         </div>
                         <div class="info-item"></div>
                         <div class="info-item-image">
-                            <button id="button1" onclick="arrowClick()" class="arrow-button">
+                            <button id="button1" onclick="plusSlides(-1)" class="arrow-button">
                                 <div class="bar1"></div>
                                 <div class="bar2"></div>
                             </button>
-                            <button id="button2" onclick="arrowClick2()" class="arrow-button2">
+                            <button id="button2" onclick="plusSlides(1)" class="arrow-button2">
                                 <div class="bar3"></div>
                                 <div class="bar4"></div>
                             </button>
@@ -237,5 +294,30 @@
                 </section>
             </article>
         </main>
+        <footer>
+            <div class="footer1">
+                <div class="footer1-item">
+                    <h1>Contact Us</h1>
+                    <h2>Instagram</h2>
+                    <h2>Disocord</h2>
+                    <h2>Gmail</h2>
+                    <h2>Phone Number</h2>
+                </div>
+                <div class="footer1-item">
+                    <h1>Find Us</h1>
+                    <h2>Instagram</h2>
+                    <h2>Github</h2>
+                    <h2>Youtube</h2>
+                </div>
+                <div class="footer1-item">
+                    <h1>Visit Us</h1>
+                    <h2>Location</h2>
+                    <h3 style="margin-left: 40px;">-Jl Pedati Raya 32, Dki Jakarta</h3>
+                </div>
+            </div>
+            <div class="footer2">
+                <h4>Website created by Hellbound Admin, found more about him at his <span style="color: aqua;">Instagram</span></h4>
+            </div>
+        </footer>
     </body>
 </html>
